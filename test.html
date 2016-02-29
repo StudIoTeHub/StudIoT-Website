@@ -28,7 +28,6 @@
         $.getJSON(requestURL, function(json) {
                  document.getElementById("humsn").innerHTML = json.result + "%";
                  document.getElementById("humsn").style.fontSize = "28px";
-                 document.getElementById("tstamp").innerHTML = json.coreInfo.last_heard;
                  });
     }, 10000);
     </script>
