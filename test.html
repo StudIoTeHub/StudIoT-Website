@@ -17,7 +17,7 @@
 
         requestURL = "https://api.particle.io/v1/devices/" + deviceID + "/" + varName + "?access_token=" + accessToken;
         $.getJSON(requestURL, function(json) {
-                 document.getElementById("tempsn").innerHTML = json.result + "&deg; C";
+                 document.getElementById("tempsn").innerHTML = json.result + "&deg;C";
                  document.getElementById("tempsn").style.fontSize = "28px";
 
                  });
@@ -36,7 +36,7 @@
 
         requestURL = "https://api.particle.io/v1/devices/" + deviceID + "/" + varName + "?access_token=" + accessToken;
         $.getJSON(requestURL, function(json) {
-                 document.getElementById("soilsn").innerHTML = json.result + "%";
+                 document.getElementById("soilsn").innerHTML = json.result + "";
                  document.getElementById("soilsn").style.fontSize = "28px";
                  });
     }, 10000);
