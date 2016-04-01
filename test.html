@@ -4,6 +4,7 @@
 <body>
     <span id="tempsn">Waiting for temperature...</span><br>
     <span id="humsn">Waiting for humidity...</span><br>
+    <span id="soilsn">Waiting for soil humidity...</span><br>
     <span id="tstamp"></span><br>
 
     <script type="text/javascript">
@@ -30,8 +31,16 @@
                  document.getElementById("humsn").style.fontSize = "28px";
                  });
     }, 10000);
+    	window.setInterval(function() {
+        var varName = "soil";
+
+        requestURL = "https://api.particle.io/v1/devices/" + deviceID + "/" + varName + "?access_token=" + accessToken;
+        $.getJSON(requestURL, function(json) {
+                 document.getElementById("soilsn").innerHTML = json.result + "%";
+                 document.getElementById("soilsn").style.fontSize = "28px";
+                 });
+    }, 10000);
     </script>
     <br>
-    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1m009_CB5nCdA31KG6F-brvcmzeA95tnuyALPSfVQxC4/pubchart?oid=1668753821&amp;format=interactive"></iframe>
 </body>
 </html>
