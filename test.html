@@ -32,7 +32,7 @@
                  });
     }, 10000);
     	window.setInterval(function() {
-        var varName = "soil";
+        var varName = "soilhum";
 
         requestURL = "https://api.particle.io/v1/devices/" + deviceID + "/" + varName + "?access_token=" + accessToken;
         $.getJSON(requestURL, function(json) {
