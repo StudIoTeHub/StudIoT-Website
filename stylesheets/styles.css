@@ -8,7 +8,6 @@
 .nav-row{
   height:60px;
   margin-left:50px;
-  width: 40%;
 
 }
 .nav-container{
@@ -18,7 +17,7 @@
   margin-left: 60px;
 }
 .content-container{
-  width:100%;
+
 }
 
 .footer-container{
@@ -33,29 +32,25 @@
 .repair{
   height:200px;
   width:200px;
-  margin-left:4%;
 }
 
 .content{
-  top:30%;
-  position:absolute;
+
+  text-align: center;
+  margin-top:8%;
 }
 #address, #email{
   font-size: 15px;
 }
-.content-repair{
-  margin-left:40%;
-}
+
 .header{
     text-align: center;
 }
 .description{
     display: inline-block;
     vertical-align: middle;
-    position: absolute;
     text-align: center;
     width:500px;
-    margin-left: 30%;
     font-size: 20px;
 }
 
